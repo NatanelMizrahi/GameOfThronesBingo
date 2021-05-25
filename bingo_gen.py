@@ -1,14 +1,12 @@
 from PIL import Image, ImageOps
 from random import shuffle
 from math import ceil
+from config import NUM_CARDS, NUM_CHARS, BINGO_CARD_ROW_SIZE as N
 
-NUM_CARDS = 50
-NUM_CHARS = 28
-N = 5
 
 src = "./icons/out"
 dest = "./bingos"
-original = Image.open("all2.jpg")
+original = Image.open("all_characters.jpg")
 
 width, height = original.size   
 x_step, y_step = width/10, height/10
